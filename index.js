@@ -84,4 +84,4 @@ app.get('/', function (req, res) {
   res.send('hello world')
 })
 
-app.listen(4006 || process.env.PORT, ()=> console.log("Listening from port 4006"))
+app.listen(process.env.PORT || 4006, ()=> console.log("Listening from port 4006"))
